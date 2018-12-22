@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButtonPrimary">#4dabf5</color>
+    <color name="colorButtonAccent">#1769aa</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorDivider">#ededed</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="color_bg_toolbar">#404040</color>
+    <color name="color_text_toolbar">#f2f2f2</color>
+
+    <color name="color_text_a8">#a8a8a8</color>
+    <color name="color_text_robot_offline">#b3b3b3</color>
+</resources>

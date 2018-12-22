@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">uSLAM</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="dummy_content">uSLAM\nUBTRobot</string>
+    <string name="remember_password">Remember</string>
+    <string name="actual_username" translatable="false">test</string>
+    <string name="actual_password" translatable="false">qwe123</string>
+    <string name="remember_password_key" translatable="false">sp_remember_password</string>
+    <string name="preference_file_key" translatable="false">sp_filename</string>
+    <string name="title_activity_choose_robot">Choose Robot</string>
+    <string name="offline_edit">offline_edit</string>
+    <string name="change_wi_fi">Change Wi-Fi</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_ip_address">Input Robot IP:</string>
+    <string name="error_invalid_ip_address">Invalid IP address</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation">Navigation</string>
+    <string name="mapping">Mapping</string>
+    <string name="import_map">Import Map</string>
+    <string name="logout">logout</string>
+    <string name="choose_map">choose map</string>
+    <string name="edit_map">edit</string>
+    <string name="export_map">Export</string>
+    <string name="delete_map">Delete</string>
+    <string name="new_map">new map</string>
+    <string name="finish">Finish</string>
+    <string name="init_pose">Init Pose</string>
+    <string name="relocalization">Re-local</string>
+    <string name="target">Target</string>
+    <string name="finish_mapping">Finish Mapping</string>
+    <string name="start_mapping">start Mapping</string>
+    <string name="finish_edit">Finish Edit</string>
+    <string name="advance_edit">Advance Edit</string>
+    <string name="virtual_wall">Virtual Wall</string>
+    <string name="virtual_tracker">Virtual Tracker</string>
+    <string name="wall">Actual Wall</string>
+    <string name="erase">Erase</string>
+    <string name="show_point_cloud">PC on</string>
+    <string name="not_show_point_cloud">PC off</string>
+    <string name="show_virtual_tracker">VT on</string>
+    <string name="not_show_virtual_tracker">VT off</string>
+    <string name="show_virtual_wall">VW on</string>
+    <string name="not_show_virtual_wall">VW off</string>
+    <string name="delete_button">delete button</string>
+    <string name="meter">&#160;m</string>
+    <string name="centimeter">&#160;cm</string>
+    <string name="millimeter">&#160;mm</string>
+    <string name="erase_white">White Erase</string>
+    <string name="erase_gray">Gray Erase</string>
+    <string name="erase_magic">Magic Erase</string>
+    <string name="speed_high">High</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_low">Low</string>
+    <string name="wifi_name">WiFi:</string>
+    <string name="idle">Idle</string>
+    <string name="toast_already_navigation" > Already navigation mode.</string>
+    <string name="toast_already_mapping" > Already mapping mode.</string>
+    <string name="unknown_error">unknown error</string>
+    <string name="toast_already_continue_mapping">Already expand mapping mode.</string>
+    <string name="toast_already_edit_map_mode">Already edit map mode</string>
+    <string name="toast_select_map_first">select a map first.</string>
+    <string name="please_enter_map_name">please enter map name.</string>
+    <string name="save_map">save</string>
+    <string name="do_not_save_map">don\'t save</string>
+    <string name="map_list_is_empty">map list is empty!</string>
+    <string name="toast_start_navigation">start %1$s navigation</string>
+    <string name="input_map_name">Please input the saving map name</string>
+    <string name="not_save">Not Save</string>
+    <string name="save">保存</string>
+    <string name="toast_relocalization_fail">Relocalization fail.</string>
+    <string name="toast_navigation_fail">Navigation fail</string>
+    <string name="toast_finished_navigation">Navigation finished</string>
+    <string name="start_navigation">start navigation</string>
+    <string name="toast_relocalization_done">Relocalization finished</string>
+    <string name="toast_select_targets_frist">Please select target in the map.</string>
+    <string name="toast_bad_name">Name can not be acceptable.</string>
+    <string name="doing_mapping">Mapping..</string>
+    <string name="doing_relocalization">Relocalization...</string>
+    <string name="toast_canceled_navigation">Navigation Canceled</string>
+    <string name="cancel_navigation">Cancel</string>
+    <string-array name="choose_mode">
+        <item>Navigation</item>
+        <item>Mapping</item>
+        <item>Expend Map</item>
+        <item>Edit Map</item>
+        <item>Import Map</item>
+    </string-array>
+
+    <string name="mode_navigation">Navigation</string>
+    <string name="mode_new_map">Mapping</string>
+    <string name="mode_expand_map">Expend Map</string>
+    <string name="mode_edit_map">Edit Map</string>
+    <string name="mode_import_map">Import Map</string>
+</resources>
+

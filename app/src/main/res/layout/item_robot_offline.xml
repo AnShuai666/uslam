@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/button_size_l"
+    android:layout_height="@dimen/button_size_l"
+    android:layout_margin="@dimen/margin_m"
+    style="@style/btn_primary"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/offline_edit"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+</LinearLayout>

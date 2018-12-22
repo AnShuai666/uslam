@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_height">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_m">
+        <!-- Bottom View Start-->
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="#66ddff00">
+
+            <TextView
+                android:id="@+id/edit_map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f7e79c"
+                android:gravity="center"
+                android:text="@string/edit_map" />
+
+            <TextView
+                android:id="@+id/export_map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4cd964"
+                android:gravity="center"
+                android:text="@string/export_map" />
+
+            <TextView
+                android:id="@+id/delete_map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="@string/delete_map" />
+        </LinearLayout>
+        <!-- Bottom View End-->
+
+        <!-- Surface View Start -->
+        <RelativeLayout
+            android:id="@+id/map_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/listview_item_background">
+            <!--What you want to show in SurfaceView-->
+
+            <ImageView
+                android:id="@+id/new_map"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_add" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/map_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_m"
+                android:layout_toRightOf="@+id/new_map"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/margin_s"
+        android:background="@color/colorDivider" />
+</FrameLayout>

@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/menu_navigation"
+            android:title="@string/navigation"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/new_map"
+            android:title="@string/mode_new_map"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/expand_map"
+            android:title="@string/mode_expand_map"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/group4">
+        <item
+            android:id="@+id/edit_map"
+            android:title="@string/mode_edit_map"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/group5">
+        <item
+            android:id="@+id/import_map"
+            android:title="@string/mode_import_map"
+            app:showAsAction="never" />
+    </group>
+</menu>

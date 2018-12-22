@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_navigation"
+        android:title="@string/navigation"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_mapping"
+        android:title="@string/mapping"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_import_map"
+        android:title="@string/import_map"
+        app:showAsAction="never"/>
+
+</menu>

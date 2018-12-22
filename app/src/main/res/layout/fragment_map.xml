@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MapFragment">
+
+    <com.ubtrobot.uslam.views.MapView
+        android:id="@+id/map_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/control_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_xxl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/speed_panel"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/speed_low"
+                android:text="@string/speed_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/speed_normal"
+                android:checked="true"
+                android:text="@string/speed_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/speed_high"
+                android:text="@string/speed_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <com.ubtrobot.uslam.views.GsMoveControlButtons
+            android:id="@+id/direction_keyboard"
+            android:layout_width="@dimen/direction_keyboard_size"
+            android:layout_height="@dimen/direction_keyboard_size"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/relocalization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="@string/relocalization" />
+
+            <Switch
+                android:id="@+id/target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/target" />
+
+            <Switch
+                android:id="@+id/show_point_cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="true"
+                android:text="@string/show_point_cloud"/>
+
+            <Switch
+                android:id="@+id/show_virtual_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/show_virtual_tracker" />
+
+            <Switch
+                android:id="@+id/show_virtual_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/show_virtual_wall" />
+
+            <Button
+                android:id="@+id/finish_mapping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/finish_mapping" />
+            <Button
+                android:id="@+id/start_mapping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/start_mapping" />
+
+            <Switch
+                android:id="@+id/virtual_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/virtual_wall" />
+
+            <Switch
+                android:id="@+id/virtual_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/virtual_tracker" />
+
+            <Switch
+                android:id="@+id/actual_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/wall"/>
+
+            <LinearLayout
+                android:id="@+id/erase_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/erase_free"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:text="@string/erase_white"/>
+
+                <Switch
+                    android:id="@+id/erase_unknown"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:text="@string/erase_gray" />
+
+                <Switch
+                    android:id="@+id/erase_magic"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:text="@string/erase_magic"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/finish_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/finish_edit" />
+            <ToggleButton
+                android:id="@+id/start_cancel_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textOn="@string/start_navigation"
+                android:textOff="@string/cancel_navigation"/>
+
+            <ImageButton
+                android:id="@+id/delete_virtual_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/delete_button"
+                android:src="@drawable/delete_button_background"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/view_group_redo_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_m">
+
+                <ImageButton
+                    android:id="@+id/undo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_s"
+                    android:background="@drawable/undo_background" />
+
+                <ImageButton
+                    android:id="@+id/redo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_s"
+                    android:background="@drawable/redo_background" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <size
+                android:width="40dp"
+                android:height="40dp" />
+            <corners android:radius="5dp" />
+            <solid android:color="@color/colorButtonAccent"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/margin_s"
+        android:left="@dimen/margin_s"
+        android:right="@dimen/margin_s"
+        android:top="@dimen/margin_s"
+        android:drawable="@drawable/ic_redo_black_24dp" />
+</layer-list>

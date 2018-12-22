@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="button_size_l">160dp</dimen>
+    <dimen name="button_radius">3dp</dimen>
+    <dimen name="padding_l">10dp</dimen>
+    <dimen name="margin_m">10dp</dimen>
+    <dimen name="margin_l">20dp</dimen>
+    <dimen name="margin_xl">30dp</dimen>
+    <dimen name="margin_xxl">40dp</dimen>
+    <dimen name="text_size_xxl">30sp</dimen>
+    <dimen name="text_size_xl">24sp</dimen>
+    <dimen name="text_size_l">18sp</dimen>
+    <dimen name="text_size_m">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="direction_keyboard_size">200dp</dimen>
+    <dimen name="list_height">90dp</dimen>
+    <dimen name="margin_s">3dp</dimen>
+    <dimen name="padding_common_15">15dp</dimen>
+    <dimen name="padding_common_25">25dp</dimen>
+    <dimen name="padding_common_30">30dp</dimen>
+    <dimen name="padding_common_5">5dp</dimen>
+    <dimen name="list_item_width_xxl">206dp</dimen>
+    <dimen name="list_item_height_xxl">140dp</dimen>
+
+</resources>

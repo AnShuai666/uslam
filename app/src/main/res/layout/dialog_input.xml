@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <View
+        android:background="#ededed"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:padding="5dp"
+        android:hint="@string/please_enter_map_name"
+        android:background="@drawable/bg_corner_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <View
+        android:background="#ededed"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/save"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/save_map"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/no_save"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/do_not_save_map"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/cancel"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
